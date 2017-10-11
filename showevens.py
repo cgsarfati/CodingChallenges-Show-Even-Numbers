@@ -22,6 +22,14 @@ def show_evens(nums):
     # if value is even, append index to new lst
     # return new lst
 
+    evens = []
+
+    for i, j in enumerate(nums):
+        if j % 2 == 0:
+            evens.append(i)
+
+    return evens
+
 
 if __name__ == '__main__':
     import doctest
